@@ -26,18 +26,6 @@ void FUnrealNlohmannJsonModule::StartupModule()
 #elif PLATFORM_LINUX
 	LibraryPath = FPaths::Combine(*BaseDir, TEXT("Binaries/ThirdParty/UnrealNlohmannJsonLibrary/Linux/x86_64-unknown-linux-gnu/libExampleLibrary.so"));
 #endif // PLATFORM_WINDOWS
-
-	ExampleLibraryHandle = !LibraryPath.IsEmpty() ? FPlatformProcess::GetDllHandle(*LibraryPath) : nullptr;
-
-	if (ExampleLibraryHandle)
-	{
-		// Call the test function in the third party library that opens a message box
-		// ExampleLibraryFunction();
-	}
-	else
-	{
-		FMessageDialog::Open(EAppMsgType::Ok, LOCTEXT("ThirdPartyLibraryError", "Failed to load example third party library"));
-	}
 }
 
 void FUnrealNlohmannJsonModule::ShutdownModule()
