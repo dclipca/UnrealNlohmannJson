@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "3.11.2+",
+	"FriendlyName": "UnrealNlohmannJson",
+	"Description": "Unreal Engine wrapper for NlohmannJson, JSON for Modern C++",
+	"Category": "Other",
+	"CreatedBy": "Dan Clipca",
+	"CreatedByURL": "https://github.com/dclipca/UnrealNlohmannJson",
+	"DocsURL": "https://github.com/dclipca/UnrealNlohmannJson",
+	"MarketplaceURL": "",
+	"SupportURL": "https://github.com/dclipca/UnrealNlohmannJson/issues",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "UnrealNlohmannJson",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
