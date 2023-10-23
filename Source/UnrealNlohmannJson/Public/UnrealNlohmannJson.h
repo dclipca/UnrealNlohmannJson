@@ -1,18 +1,19 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 #pragma once
 
-#include "Modules/ModuleManager.h"
+#include "CoreMinimal.h"
+#include "ThirdParty/UnrealNlohmannJsonLibrary/json.hpp"
 
-class FUnrealNlohmannJsonModule : public IModuleInterface
+class UnrealNlohmannJson
 {
-public:
-
-	/** IModuleInterface implementation */
-	virtual void StartupModule() override;
-	virtual void ShutdownModule() override;
-
 private:
-	/** Handle to the test dll we will load */
-	void*	ExampleLibraryHandle;
+	static nlohmann::json JsonObj;
+
+public:
+	// Constructor
+	UnrealNlohmannJson();
+
+	// Methods
+	static void SetJsonData(const nlohmann::json& NewJsonObj);
+	static const nlohmann::json& GetJsonData();
+	static FString Dump();
 };
