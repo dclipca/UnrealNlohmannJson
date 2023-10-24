@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "3.11.2.3",
+	"VersionName": "3.11.2.4",
 	"FriendlyName": "UnrealNlohmannJson",
 	"Description": "Unreal Engine wrapper for NlohmannJson, JSON for Modern C++",
 	"Category": "Other",

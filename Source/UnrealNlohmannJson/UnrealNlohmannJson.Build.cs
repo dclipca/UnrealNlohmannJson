@@ -26,7 +26,6 @@ public class UnrealNlohmannJson : ModuleRules
 			new string[]
 			{
 				"Core",
-				"CoreUObject",   // <-- Add this for FString
 				"UnrealNlohmannJsonLibrary",
 				"Projects"
 				// ... add other public dependencies that you statically link with here ...

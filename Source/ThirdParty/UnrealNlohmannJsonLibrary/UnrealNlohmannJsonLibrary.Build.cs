@@ -12,7 +12,7 @@ public class UnrealNlohmannJsonLibrary : ModuleRules
 
 		PublicIncludePaths.AddRange(
 			new string[] {
-				ModuleDirectory + "/ThirdParty/UnrealNlohmannJson",
+				ModuleDirectory // Updated path
 				// ... add other public include paths required here ...
 			}
 		);
