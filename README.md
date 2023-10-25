@@ -24,7 +24,7 @@ UE_LOG(LogTemp, Warning, TEXT("%s"), *JsonString); // {"happy":true,"pi":3.141}
 4. ???
 5. Profit!!!
 
-Enabling exceptions via `bEnableExceptions = true;` in UE5 has various implications:
+## Enabling exceptions via `bEnableExceptions = true;` in UE5 has various implications:
 ### Pros
 1. Error Handling: Exceptions provide a way to react to exceptional circumstances (like runtime errors) in programs by transferring control to special functions called handlers.
 2. Third-party Libraries: You would be able to use `UnrealNlohmannJson` and other UE5 libraries or plugins that require exception support.
