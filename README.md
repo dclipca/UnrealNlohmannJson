@@ -18,10 +18,20 @@ FString JsonString(StdJsonString.c_str());
 UE_LOG(LogTemp, Warning, TEXT("%s"), *JsonString); // {"happy":true,"pi":3.141}
 ```
 ## Installation
-1. Download [Source code (zip)](https://github.com/dclipca/UnrealNlohmannJson/archive/refs/tags/3.11.2.3.zip).
+1. Download [Source code (zip)](https://github.com/dclipca/UnrealNlohmannJson/archive/refs/tags/3.11.2.3.zip)
 2. Drag the folder inside the zip, for example `UnrealNlohmannJson-3.11.2.3`, to the `Plugins` folder of your Unreal Engine project
-3. ???
-4. Profit!
+3. Enable exceptions via adding `bEnableExceptions = true;` at the bottom of your `MyProject.Build.cs`, typically right after `// To include OnlineSubsystemSteam`
+4. ???
+5. Profit!!!
+
+Enabling exceptions via `bEnableExceptions = true;` in UE5 has various implications:
+### Pros
+1. Error Handling: Exceptions provide a way to react to exceptional circumstances (like runtime errors) in programs by transferring control to special functions called handlers.
+2. Third-party Libraries: You would be able to use `UnrealNlohmannJson` and other UE5 libraries or plugins that require exception support.
+### Cons
+1. Performance: Enabling exceptions could potentially decrease performance due to the overhead associated with exception handling.
+2. Compatibility: Not all codebases or platforms may support exceptions, which could lead to compatibility issues.
+3. Debugging Difficulty: Exceptions can sometimes make code harder to understand and debug, especially if used excessively or incorrectly.
 
 ## Planned
 1. Convenience wrappers for out-of-the-box conversion of `std::string` to `FString` and more
